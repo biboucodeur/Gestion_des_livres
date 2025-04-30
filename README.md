@@ -42,6 +42,8 @@ JWT_SECRET=monsecret
 ```
 
 Créer la base de données `gestion_des_livres` dans MySQL puis exécuter les requêtes de création des tables (users, books) :
+
+```
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR(255) UNIQUE,
@@ -54,7 +56,7 @@ CREATE TABLE books (
   author VARCHAR(255),
   description TEXT
 );
-
+```
 
 Démarrer le backend :
 

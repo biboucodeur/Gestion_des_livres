@@ -19,8 +19,8 @@ Ce projet est une application web CRUD de gestion de livres avec authentificatio
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/biboucodeur/gestion-des-livres.git
-cd gestion-des-livres
+git clone https://github.com/biboucodeur/Gestion_des_livres.git
+cd gestion_des_livres
 ```
 
 ### 2. Backend (Express)

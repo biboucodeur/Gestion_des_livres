@@ -41,7 +41,20 @@ PORT=5000
 JWT_SECRET=monsecret
 ```
 
-Créer la base de données `gestion_des_livres` dans MySQL puis exécuter les requêtes de création des tables (users, books).
+Créer la base de données `gestion_des_livres` dans MySQL puis exécuter les requêtes de création des tables (users, books) :
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) UNIQUE,
+  password VARCHAR(255)
+);
+
+CREATE TABLE books (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  author VARCHAR(255),
+  description TEXT
+);
+
 
 Démarrer le backend :
 
@@ -57,7 +70,7 @@ npm install
 npm run dev
 ```
 
-L'application frontend sera accessible sur : `http://localhost:5173`
+L'application sera accessible sur : `http://localhost:5173`
 
 ## Fonctionnalités
 
@@ -124,7 +137,7 @@ L'application frontend sera accessible sur : `http://localhost:5173`
 ## Auteur
 
 Projet réalisé par **Abibou Wade** dans le cadre d’un projet edacy.  
-Portfolio : [abibouwade.com](https://github.com/biboucodeur)
+Portfolio : [abibouwade.com](https://abibouwade.com/)
 
 ---
 
